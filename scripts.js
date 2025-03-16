@@ -17,4 +17,13 @@ form.addEventListener("submit", (event) => {
   const numDividend = Number(dividend);
   const numDivider = Number(divider);
 
+  //Check for invalid numbers
+
+  if (isNaN(numDividend) || isNaN(numDivider)){
+    console.error(new Error("Invalid Input!!!"));
+    document.body.innerHTML = 
+    "<h1>Something critical went wrong. Please reload the page</h1>";
+    return;
+      }
+
 });
