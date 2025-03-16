@@ -34,4 +34,8 @@ form.addEventListener("submit", (event) => {
     return;
 
   }
+
+  // Perform division and show integer result
+
+  result.innerText = Math.trunc(numDividend / numDivider);
 });
