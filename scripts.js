@@ -26,4 +26,12 @@ form.addEventListener("submit", (event) => {
     return;
       }
 
+// Check for division by zero
+  if (numDivider === 0 ){
+    console.error(new Error("division by zero attempted"));
+    result.innerText = 
+    "Division not performed. Invalid number provided. Try again";
+    return;
+
+  }
 });
