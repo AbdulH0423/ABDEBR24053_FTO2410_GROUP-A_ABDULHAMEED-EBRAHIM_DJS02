@@ -12,4 +12,9 @@ form.addEventListener("submit", (event) => {
     result.innerText = "Division not performed. Both values are required in inputs. Try again";
     return;
   }
+
+  //Convert numbers from strings
+  const numDividend = Number(dividend);
+  const numDivider = Number(divider);
+
 });
